@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def call(String message = 'message') {
+def info(String message = 'message') {
     echo "INFO: ${message}"
 }
