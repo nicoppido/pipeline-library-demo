@@ -2,7 +2,7 @@
 package com.test
 
 class GlobalVars {
-   static String foo = "bar"
+   static String foo = "Nico"
 
    // refer to this in a pipeline using:
    //
