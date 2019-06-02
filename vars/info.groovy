@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 
-def info(message) {
+def call(String message = 'message') {
     echo "INFO: ${message}"
 }
 
-def warning(message) {
+def call(String message = 'message') {
     echo "WARNING: ${message}"
 }
