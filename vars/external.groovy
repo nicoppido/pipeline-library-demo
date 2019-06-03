@@ -8,4 +8,4 @@ def external(int count) {
 	    error "${count} was not prime"
 	}
 	// …
-f p
+}
