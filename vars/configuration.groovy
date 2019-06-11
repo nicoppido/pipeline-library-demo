@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-import net.test.parser.utils.ParserUtils
+import net.test.parser.utils.ParserUtils;
 
 def call(context, String configYaml) {
 	//Load project configuration

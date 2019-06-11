@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
-package net.test.parser
-package net.test.ProjectConfiguration
+package net.test.parser;
+package net.test.ProjectConfiguration;
 
 class configParser {
 
