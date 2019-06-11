@@ -16,7 +16,9 @@ def call(String configYaml){
                     }
                 }
                 stage("Project Configuration"){
-                    configuration(this, configYaml)
+                    steps {
+                        configuration(this, configYaml)
+                    }
                 }
                 stage('Info') {
                     steps {
