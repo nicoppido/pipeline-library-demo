@@ -30,6 +30,7 @@ def call(){
                 stage('Test') {
                     steps {
                         sh 'mvn test'
+                    }
                 }
                 stage('Stage 3'){
                     steps {
@@ -49,5 +50,4 @@ def call(){
     finally {
         echo ""
     }
-    
 }
