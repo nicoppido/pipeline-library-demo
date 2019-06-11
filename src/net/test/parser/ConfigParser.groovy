@@ -8,7 +8,7 @@ class ConfigParser {
 
 		ProjectConfiguration projectConfiguration = new ProjectConfiguration();
 		projectConfiguration.enviroment = parseConfigEntity(yaml.enviroment)
-
+		echo projectConfiguration.enviroment
 		return projectConfiguration;
 	}
 
