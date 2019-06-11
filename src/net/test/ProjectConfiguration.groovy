@@ -3,7 +3,7 @@ package net.test;
 import net.test.config.PipelineVersionConfiguration;
 
 class ProjectConfiguration {
-   def enviroment;
+   def environment;
    def env;
    def buildNumber;
 

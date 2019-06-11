@@ -6,8 +6,8 @@ import net.test.ProjectConfiguration;
 
 class ParserUtils implements Serializable {
 	private String configYaml;
-	private final def context;
 	private ProjectConfiguration projectConfig;
+	private final def context;
 
 	ParserUtils(context, String configYaml){
 		this.context = context;
@@ -21,6 +21,7 @@ class ParserUtils implements Serializable {
 		}
 		catch(Exception e) {
 			this.context.echo "Esplosione"
+			this.context.echo e.toString()
 		}
 		this.projectConfig = ConfigParser.parse(yaml,context.env);
 	}
@@ -29,6 +30,6 @@ class ParserUtils implements Serializable {
 		if (this.projectConfig.pipelineVersionConfiguration){
 			this.context.env.PIPELINE_VERSION = this.projectConfig.pipelineVersionConfiguration.pipelineVersion;
 		}
-		
+
 	}
 }

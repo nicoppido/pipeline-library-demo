@@ -8,12 +8,16 @@ class ConfigParser {
 	static ProjectConfiguration parse(def yaml, def env){
 
 		ProjectConfiguration projectConfiguration = new ProjectConfiguration();
-		projectConfiguration.enviroment = parseConfigEntity(yaml.enviroment);
+		
+		projectConfiguration.environment = parseConfigEntity(yaml.environment);
 
 		projectConfiguration.pipelineVersionConfiguration = parsePipelineVersionConfiguration(yaml);
 
+		projectConfiguration.env = env
+
 		return projectConfiguration;
 	}
+
 
 	static def parseConfigEntity(def configEntity){
 		if(!configEntity){
@@ -22,14 +26,15 @@ class ConfigParser {
 		return configEntity.collect { k, v -> "${k}=${v}" };
 	}
 
+
 	static def parsePipelineVersionConfiguration(def pipelineVersion){
 		if(!pipelineVersion){
 			return;
 		}
 		Map<String, String> pipelineVersionSettings = new LinkedHashMap();
 
-		pipelineVersion.collect { 
-				k, v -> pipelineVersionSettings.put(k, v);
+		pipelineVersion.collect { k, v -> 
+			pipelineVersionSettings.put(k, v);
 		}
 		return new PipelineVersionConfiguration(pipelineVersionSettings)
 	}

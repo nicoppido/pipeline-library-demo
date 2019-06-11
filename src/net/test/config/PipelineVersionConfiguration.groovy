@@ -2,6 +2,7 @@
 package net.test.config;
 
 class PipelineVersionConfiguration {
+	
 	String pipelineVersion;
 	private final String DEFAULT_PIPELINE_VERSION = '0.0'
 
