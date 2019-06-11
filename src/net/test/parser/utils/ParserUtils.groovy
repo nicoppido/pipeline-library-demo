@@ -9,7 +9,7 @@ class ParserUtils implements Serializable {
 	private final def context;
 	private ProjectConfiguration projectConfig;
 
-	ParserUtils(context, string configYaml){
+	ParserUtils(context, String configYaml){
 		this.context = context;
 		this.configYaml = configYaml;
 	}
