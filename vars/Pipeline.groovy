@@ -22,11 +22,25 @@ def call(){
                         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                     }
                 }
+                stage('Build') { 
+                    steps {
+                        sh 'mvn -B -DskipTests clean package' 
+                    }
+                }
+                stage('Test') {
+                    steps {
+                        sh 'mvn test'
+                }
                 stage('Stage 3'){
                     steps {
                         script { 
-                            log.warning 'Nothing to do!'
+                            log.warning 'Nothing more to do!'
                         }   
+                    }
+                }
+                post {
+                    always {
+                       junit 'target/surefire-reports/*.xml'
                     }
                 }
             }
