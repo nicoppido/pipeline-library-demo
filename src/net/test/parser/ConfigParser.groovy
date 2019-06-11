@@ -6,7 +6,7 @@ class configParser {
 
 	static ProjectConfiguration parse(def yaml, def env){
 
-		projectConfiguration = new ProjectConfiguration();
+		ProjectConfiguration projectConfiguration = new ProjectConfiguration();
 		projectConfiguration.enviroment = parseConfigEntity(yaml.enviroment)
 
 		return projectConfiguration;
