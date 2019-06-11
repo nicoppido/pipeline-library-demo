@@ -15,7 +15,6 @@ def call(){
                 stage('Stage 2') {
                     steps {
                         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                        #println GlobalVars.foo
                     }
                 }
                 stage('Stage 3'){
