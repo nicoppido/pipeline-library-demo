@@ -13,6 +13,7 @@ def call(String configYaml){
                             log.info 'Starting'
                         }  
                         sayHello 'Nicolò'
+                        sayHello configYaml
                     }
                 }
                 stage("Project Configuration"){
