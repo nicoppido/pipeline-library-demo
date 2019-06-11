@@ -9,7 +9,7 @@ def call(){
                 }
             }
             stages {
-                stage('Stage 1') {
+                stage('Welcome') {
                     steps {
                         script { 
                             log.info 'Starting'
@@ -17,7 +17,7 @@ def call(){
                         sayHello 'Nicolò'
                     }
                 }
-                stage('Stage 2') {
+                stage('Info') {
                     steps {
                         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                     }
@@ -32,7 +32,7 @@ def call(){
                         sh 'mvn test'
                     }
                 }
-                stage('Stage 3'){
+                stage('Close'){
                     steps {
                         script { 
                             log.warning 'Nothing more to do!'
