@@ -2,7 +2,7 @@
 package net.test.parser;
 import net.test.ProjectConfiguration;
 
-class configParser {
+class ConfigParser {
 
 	static ProjectConfiguration parse(def yaml, def env){
 
