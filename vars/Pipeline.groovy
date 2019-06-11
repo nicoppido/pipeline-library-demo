@@ -18,6 +18,7 @@ def call(String configYaml){
                 stage("Project Configuration"){
                     steps {
                         configuration(this, configYaml)
+                        echo "Pipeline ${env.PIPELINE_VERSION}"
                     }
                 }
                 stage('Info') {

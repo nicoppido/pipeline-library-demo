@@ -24,4 +24,11 @@ class ParserUtils implements Serializable {
 		}
 		this.projectConfig = ConfigParser.parse(yaml,context.env);
 	}
+
+	def storeConfigInEnvVariables(){
+		if (this.projectConfig.pipelineVersionConfiguration){
+			this.context.env.PIPELINE_VERSION = this.projectConfig.pipelineVersionConfiguration.pipelineVersion;
+		}
+		
+	}
 }

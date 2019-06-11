@@ -1,14 +1,17 @@
 #!/usr/bin/env groovy
 package net.test.parser;
 import net.test.ProjectConfiguration;
+import net.test.config.PipelineVersionConfiguration;
 
 class ConfigParser {
 
 	static ProjectConfiguration parse(def yaml, def env){
 
 		ProjectConfiguration projectConfiguration = new ProjectConfiguration();
-		projectConfiguration.enviroment = parseConfigEntity(yaml.enviroment)
-		echo projectConfiguration.enviroment
+		projectConfiguration.enviroment = parseConfigEntity(yaml.enviroment);
+
+		projectConfiguration.pipelineVersionConfiguration = parsePipelineVersionConfiguration(yaml);
+
 		return projectConfiguration;
 	}
 
@@ -17,5 +20,17 @@ class ConfigParser {
 			return "";
 		}
 		return configEntity.collect { k, v -> "${k}=${v}" };
+	}
+
+	static def parsePipelineVersionConfiguration(def pipelineVersion){
+		if(!pipelineVersion){
+			return;
+		}
+		Map<String, String> pipelineVersionSettings = new LinkedHashMap();
+
+		pipelineVersion.collect { 
+				k, v -> pipelineVersionSettings.put(k, v);
+		}
+		return new PipelineVersionConfiguration(pipelineVersionSettings)
 	}
 }
