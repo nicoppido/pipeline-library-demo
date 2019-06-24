@@ -27,5 +27,6 @@ class ParamStore {
 
 		this.context.env.LANGUAGE = this.l.getLanguage();
 	}
-	
+
 }
+
