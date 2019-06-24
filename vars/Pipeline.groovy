@@ -50,13 +50,13 @@ def call(String configYaml){
                     }
                 }
             }
+            */
             post {
                 always {
                 	echo "Always"
-                    junit 'target/surefire-reports/*.xml'
+                    //junit 'target/surefire-reports/*.xml'
                 }
             }
-   			*/
         }
     }
     finally {
