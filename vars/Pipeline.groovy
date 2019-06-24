@@ -51,4 +51,7 @@ def call(String configYaml){
             }
         }
     }
+    finally {
+        echo "Finally"
+    }
 }
