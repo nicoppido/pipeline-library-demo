@@ -15,11 +15,11 @@ class ParamStore {
 	def store(){
     	try{
             this.l = Languages.valueOf(this.language);
+            this.context.env.LANGUAGE = this.l.getLanguage();
         }
         catch(Exception e){
             println("Type of language not allowed"); //Error Handling Pipeline Abort
         }
-        this.context.env.LANGUAGE = this.l.getLanguage();
 	}
 
 }	
