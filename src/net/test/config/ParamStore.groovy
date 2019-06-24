@@ -17,10 +17,8 @@ class ParamStore {
             this.l = Languages.valueOf(this.language);
             this.context.env.LANGUAGE = this.l.getLanguage();
         }
-        catch(Exception e){
-            //this.context.echo "Type of language not allowed"; //Error Handling Pipeline Abort
-        	//this.context.env.LANGUAGE = "Type of language not allowed";
-        	throw new Exception("Language ${n} not allowed");
+        catch(throw new Exception("Language ${n} not allowed")){
+        	
         }
 	}
 }	
@@ -36,6 +34,3 @@ class ParamStore {
         } 
 		this.context.env.LANGUAGE = this.l.getLanguage();
 		*/
-
-
-
