@@ -2,7 +2,7 @@
 package net.test.config;
 
 public enum Languages {
-	java("java"), dotnet("dotnet");
+	JAVA("java"), DOTNET("dotnet");
 
 	public Languages(String language) {
 		this.language = language;
