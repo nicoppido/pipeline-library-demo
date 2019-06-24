@@ -13,16 +13,13 @@ class ParamStore {
 	}
 
 	def store(){
-        switch(this.language) 
-        { 
-        	try{
-                this.l = Languages.valueOf(this.language);
-            }
-            catch(Exception e){
-               this.l = Languages.java; //Error Handling Pipeline Abort
-            }
-            this.context.env.LANGUAGE = this.l.getLanguage();
-		}
+    	try{
+            this.l = Languages.valueOf(this.language);
+        }
+        catch(Exception e){
+            this.l = Languages.java; //Error Handling Pipeline Abort
+        }
+        this.context.env.LANGUAGE = this.l.getLanguage();
 	}
 
 }	
