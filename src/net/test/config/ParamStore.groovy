@@ -19,7 +19,7 @@ class ParamStore {
         }
         catch(Exception e){
             //this.context.echo "Type of language not allowed"; //Error Handling Pipeline Abort
-        	println("Type of language not allowed");
+        	this.context.env.LANGUAGE = "Type of language not allowed";
         }
 	}
 
