@@ -52,6 +52,6 @@ def call(String configYaml){
         }
     }
     catch(e) {
-        echo "Error Happened"
+        echo "Error Happened ${e}"
     }
 }
