@@ -19,8 +19,8 @@ def call(String configYaml){
                 stage("Project Configuration"){
                     steps {
                         //configuration(this, configYaml)
+                        //echo "Pipeline ${env.PIPELINE_VERSION}"
                         paramInEnv(this)
-                        echo "Pipeline ${env.PIPELINE_VERSION}"
                         echo "Language ${env.LANGUAGE}"
                     }
                 }
