@@ -31,12 +31,14 @@ def call(String configYaml){
                 }
                 stage('Build') { 
                     steps {
-                        sh 'mvn -B -DskipTests clean package' 
+                    	echo "Build"
+                        //sh 'mvn -B -DskipTests clean package' 
                     }
                 }
                 stage('Test') {
                     steps {
-                        sh 'mvn test'
+                    	echo "Test"
+                        //sh 'mvn test'
                     }
                 }
                 stage('Close'){
@@ -49,6 +51,7 @@ def call(String configYaml){
             }
             post {
                 always {
+                	echo "Always"
                     junit 'target/surefire-reports/*.xml'
                 }
             }
