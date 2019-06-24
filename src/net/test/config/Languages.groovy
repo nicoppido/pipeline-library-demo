@@ -10,7 +10,7 @@ public enum Languages {
 
 	private final String language;
 
-	public int getLanguage() {
+	public String getLanguage() {
 		return language;
 	}
 

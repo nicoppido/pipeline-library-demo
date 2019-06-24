@@ -16,15 +16,14 @@ class ParamStore {
         switch(this.language) 
         { 
             case "java": 
-                this.l = new Languages("java");
+                this.l = new Languages(language);
                 break; 
             case "dotnet": 
-                this.l = new Languages(this.language);
+                this.l = new Languages(language);
                 break; 
             default: 
-                this.l = new Languages(this.language); //TO-DO
+                this.l = new Languages(language); //TO-DO
         } 
-
 		this.context.env.LANGUAGE = this.l.getLanguage();
 	}
 
