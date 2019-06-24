@@ -29,6 +29,7 @@ def call(String configYaml){
                         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                     }
                 }
+                /*
                 stage('Build') { 
                     steps {
                     	echo "Build"
@@ -38,7 +39,7 @@ def call(String configYaml){
                 stage('Test') {
                     steps {
                     	echo "Test"
-                        //sh 'mvn test'
+                        sh 'mvn test'
                     }
                 }
                 stage('Close'){
@@ -55,6 +56,7 @@ def call(String configYaml){
                     junit 'target/surefire-reports/*.xml'
                 }
             }
+   			*/
         }
     }
     finally {
