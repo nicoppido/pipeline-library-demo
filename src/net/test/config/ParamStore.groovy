@@ -22,7 +22,10 @@ class ParamStore {
                this.l = Languages.java; //Error Handling Pipeline Abort
             }
             this.context.env.LANGUAGE = this.l.getLanguage();
+		}
+	}
 
+}	
         /*	
             case "java": 
                 this.l = this.language as Languages;
@@ -35,7 +38,6 @@ class ParamStore {
         } 
 		this.context.env.LANGUAGE = this.l.getLanguage();
 		*/
-	}
 
-}
+
 
