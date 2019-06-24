@@ -4,7 +4,7 @@ import net.test.config.Languages;
 
 class ParamStore {
 	
-	private final String language = "java"; // Simulo la stringa letta da config.yaml
+	private final String language = "javax"; // Simulo la stringa letta da config.yaml
 	private final def context;
 	private Languages l;
 
@@ -17,7 +17,7 @@ class ParamStore {
             this.l = Languages.valueOf(this.language);
         }
         catch(Exception e){
-            this.l = Languages.java; //Error Handling Pipeline Abort
+            println("Type of language not allowed"); //Error Handling Pipeline Abort
         }
         this.context.env.LANGUAGE = this.l.getLanguage();
 	}
