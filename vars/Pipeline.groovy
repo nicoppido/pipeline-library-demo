@@ -13,12 +13,12 @@ def call(String configYaml){
                             log.info 'Starting'
                         }  
                         sayHello 'Nicolò'
-                        sayHello configYaml
+                        //sayHello configYaml
                     }
                 }
                 stage("Project Configuration"){
                     steps {
-                        configuration(this, configYaml)
+                        //configuration(this, configYaml)
                         echo "Pipeline ${env.PIPELINE_VERSION}"
                     }
                 }
@@ -53,6 +53,6 @@ def call(String configYaml){
         }
     }
     finally {
-        echo ""
+        echo "Finally"
     }
 }
