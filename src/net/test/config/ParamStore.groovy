@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 package net.test.config;
+import net.test.config.ParamStore;
 
 class ParamStore {
 	
