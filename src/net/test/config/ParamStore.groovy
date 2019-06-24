@@ -16,7 +16,7 @@ class ParamStore {
         switch(this.language) 
         { 
             case "java": 
-                this.l = new Languages(this.language);
+                this.l = new Languages("java");
                 break; 
             case "dotnet": 
                 this.l = new Languages(this.language);
