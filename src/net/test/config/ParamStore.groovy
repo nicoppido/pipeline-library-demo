@@ -17,8 +17,8 @@ class ParamStore {
             this.l = Languages.valueOf(this.language);
             this.context.env.LANGUAGE = this.l.getLanguage();
         }
-        catch(throw new Exception("Language ${n} not allowed")){
-        	
+        catch(Exception e){
+        	//throw new Exception("Language ${n} not allowed");
         }
 	}
 }	
