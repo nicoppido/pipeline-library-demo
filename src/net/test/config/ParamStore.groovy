@@ -4,7 +4,7 @@ import net.test.config.Languages;
 
 class ParamStore {
 	
-	private final String language = "java"; // Simulo la stringa letta da config.yaml
+	private final String language = "javax"; // Simulo la stringa letta da config.yaml
 	private final def context;
 	private Languages l;
 
