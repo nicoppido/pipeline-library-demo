@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 package net.test.config;
 import net.test.config.Languages;
+import net.test.error.RequiredKeysException;
 
 class ParamStore {
 	
@@ -12,13 +13,13 @@ class ParamStore {
 		this.context = context;
 	}
 
-	def store(){
+	def store() throws RequiredKeysException {
     	try{
             this.l = Languages.valueOf(this.language);
             this.context.env.LANGUAGE = this.l.getLanguage();
         }
         catch(Exception e){
-        	throw new Exception("Language ${language} not allowed");
+        	throw new RequiredKeysException("Language ${language} not allowed");
         	//throw e;
         }
 	}
