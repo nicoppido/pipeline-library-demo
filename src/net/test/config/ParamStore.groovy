@@ -5,7 +5,7 @@ import net.test.error.RequiredKeysException;
 
 class ParamStore {
 	
-	private final String language = "javax"; // Simulo la stringa letta da config.yaml
+	private final String language = "donet"; // Simulo la stringa letta da config.yaml
 	private final def context;
 	private Languages l;
 
