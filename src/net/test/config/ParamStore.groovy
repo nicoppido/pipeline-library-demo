@@ -19,7 +19,7 @@ class ParamStore {
             this.context.env.LANGUAGE = this.l.getLanguage();
         }
         catch(Exception e){
-        	throw new RequiredKeysException("Language ${language} not allowed");
+        	throw new RequiredKeysException("programming_language",${language});
         	//throw e;
         }
 	}
