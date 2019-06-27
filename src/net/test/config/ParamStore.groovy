@@ -5,7 +5,7 @@ import net.test.config.PipelineVersion;
 import net.test.error.RequiredKeysException;
 
 class ParamStore {
-	
+
 	private final String language = "java"; // Simulo la stringa letta da config.yaml
 	private final String pvString = "1.0";
 
@@ -13,28 +13,31 @@ class ParamStore {
 	private Languages l;
 	private PipelineVersion pv;
 
-	ParamStore(context){
+	ParamStore(context) {
 		this.context = context;
 	}
 
 	def store() throws RequiredKeysException {
-    	try{
-            this.l = Languages.valueOf(this.language);
-            this.context.env.LANGUAGE = this.l.getLanguage();
-        }
-        catch(Exception e){
-        	throw new RequiredKeysException("programming_language","${language}");
-        }
+		try {
+			this.l = Languages.valueOf(this.language);
+			this.context.env.LANGUAGE = this.l.getLanguage();
+		}
+		catch (Exception e) {
+			throw new RequiredKeysException("programming_language", "${language}");
+		}
 
-		try{
+		try {
 			this.pv = PipelineVersion.get(pvString);
 			this.context.env.PIPELINE_VERSION = this.pv.getPipelineVersion();
 		}
-		catch(Exception e){
+		catch (Exception e) {
 			throw new Exception();
 
+		}
 	}
-}	
+
+
+}
         /*	
             case "java": 
                 this.l = this.language as Languages;
