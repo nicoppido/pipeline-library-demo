@@ -22,6 +22,7 @@ def call(String configYaml){
                         //echo "Pipeline ${env.PIPELINE_VERSION}"
                         paramInEnv(this)
                         echo "Language ${env.LANGUAGE}"
+                        echo "Pipeline Version ${env.PIPELINE_VERSION}"
                     }
                 }
                 stage('Info') {

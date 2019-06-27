@@ -1,13 +1,17 @@
 #!/usr/bin/env groovy
 package net.test.config;
 import net.test.config.Languages;
+import net.test.config.PipelineVersion;
 import net.test.error.RequiredKeysException;
 
 class ParamStore {
 	
 	private final String language = "donet"; // Simulo la stringa letta da config.yaml
+	private final String pvString = "v1_0";
+
 	private final def context;
 	private Languages l;
+	private PipelineVersion pv;
 
 	ParamStore(context){
 		this.context = context;
@@ -20,8 +24,16 @@ class ParamStore {
         }
         catch(Exception e){
         	throw new RequiredKeysException("programming_language","${language}");
-        	//throw e;
         }
+
+		try{
+			this.pv = PipelineVersion.valueOf(this.pvString);
+			this.context.env.PIPELINE_VERSION = this.l.getPipelineVersion();
+		}
+		catch(Exception e){
+			throw new RequiredKeysException("pipeline_version","${pvString}");
+		}
+
 	}
 }	
         /*	
