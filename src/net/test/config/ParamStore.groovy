@@ -28,7 +28,9 @@ class ParamStore {
 
 		try {
 			this.pv = PipelineVersion.get(pvString);
+			this.context.echo "{$pv.name()}";
 			this.context.env.PIPELINE_VERSION = this.pv.getPipelineVersion();
+			this.context.echo "{$env.PIPELINE_VERSION()}";
 		}
 		catch (Exception e) {
 			throw new Exception();
@@ -38,6 +40,8 @@ class ParamStore {
 
 
 }
+
+
         /*	
             case "java": 
                 this.l = this.language as Languages;

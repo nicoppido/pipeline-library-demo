@@ -1,6 +1,8 @@
 #!/usr/bin/env groovy
 
-package net.test.config;
+package net.test.config
+import java.util.concurrent.ConcurrentHashMap;
+
 enum PipelineVersion {
     v1_0("1.0"),
     v2_0("2.0");
