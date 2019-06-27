@@ -1,20 +1,33 @@
 #!/usr/bin/env groovy
 
 package net.test.config;
+enum PipelineVersion {
+    v1_0("1.0"),
+    v2_0("2.0");
 
-public enum PipelineVersion {
-    v1_0("1.0"), v2_0("2.0");
+    private final String pipelineVersion;
+    private static final Map<String,MyEnum> ENUM_MAP;
 
-    public PipelineVersion(String pipelineVersion) {
+    PipelineVersion(String pipelineVersion) {
         this.pipelineVersion = pipelineVersion;
     }
 
-    private final String pipelineVersion;
-
-    public String getPipelineVersion() {
+    String getPipelineVersion() {
         return pipelineVersion;
     }
 
+    static {
+        Map<String,PipelineVersion> map = new ConcurrentHashMap<String, PipelineVersion>();
+        for (PipelineVersion instance : PipelineVersion.pipelineVersion()) {
+            map.put(instance.getName(),instance);
+        }
+        ENUM_MAP = Collections.unmodifiableMap(map);
+    }
+
+    static PipelineVersion get (String pipelineVersion) {
+        return ENUM_MAP.get(pipelineVersion);
+    }
 
 
 }
+

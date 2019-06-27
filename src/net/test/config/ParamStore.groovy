@@ -27,7 +27,7 @@ class ParamStore {
         }
 
 		try{
-			this.pv = PipelineVersion.valueOf(this.pvString);
+			this.pv = PipelineVersion.get(pvString);
 			this.context.env.PIPELINE_VERSION = this.pv.getPipelineVersion();
 		}
 		catch(Exception e){
