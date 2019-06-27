@@ -1,5 +1,5 @@
-
 #!/usr/bin/env groovy
+
 package net.test.config;
 
 public enum PipelineVersion {
