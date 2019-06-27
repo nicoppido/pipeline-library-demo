@@ -31,7 +31,7 @@ class ParamStore {
 			this.context.env.PIPELINE_VERSION = this.pv.getPipelineVersion();
 		}
 		catch(Exception e){
-			throw new RequiredKeysException("pipeline_version","${pvString}");
+			throw new Exception("pipeline_version non va bene","${pvString}");
 		}
 
 	}
