@@ -7,7 +7,7 @@ import net.test.error.RequiredKeysException;
 class ParamStore {
 	
 	private final String language = "java"; // Simulo la stringa letta da config.yaml
-	private final String pvString = "v1_0";
+	private final String pvString = "1.0";
 
 	private final def context;
 	private Languages l;
