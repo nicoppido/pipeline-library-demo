@@ -8,7 +8,7 @@ enum PipelineVersion {
     v2_0("2.0");
 
     private final String pipelineVersion;
-    private static final Map<String,MyEnum> ENUM_MAP;
+    private static final Map<String,PipelineVersion> ENUM_MAP;
 
     PipelineVersion(String pipelineVersion) {
         this.pipelineVersion = pipelineVersion;
