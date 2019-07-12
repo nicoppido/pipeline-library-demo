@@ -1,10 +1,13 @@
-def call(String configYaml){
+def call(String configYaml, String version){
     try {
         pipeline {
             agent {
                 docker {
                     image 'maven:3-alpine'  
                 }
+            }
+            tools{
+                jdk version
             }
             stages {
                 stage('Welcome') {
@@ -14,9 +17,6 @@ def call(String configYaml){
                         }  
                         sayHello 'Nicolò'
                         //sayHello configYaml
-                        tools{
-                            jdk 'jdk11'
-                        }
                     }
                 }
                 stage("Project Configuration"){
