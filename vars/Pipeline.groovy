@@ -6,9 +6,6 @@ def call(String configYaml){
                     image 'maven:3-alpine'  
                 }
             }
-            tools{
-                jdk
-            }
             stages {
                 stage('Welcome') {
                     steps {
@@ -17,6 +14,9 @@ def call(String configYaml){
                         }  
                         sayHello 'Nicolò'
                         //sayHello configYaml
+                        tools{
+                            jdk 'jdk11'
+                        }
                     }
                 }
                 stage("Project Configuration"){
