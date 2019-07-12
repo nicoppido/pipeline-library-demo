@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4cd8095-b77b-4f95-a323-831c8b089611" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/net/test/config/ParamStore.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/test/config/ParamStore.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/Pipeline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/Pipeline.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vars/Pipeline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/test/config/ParamStore.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -70,10 +70,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/net/test/parser/utils/ParserUtils.groovy" />
         <option value="$PROJECT_DIR$/src/net/test/error/RequiredKeysException.groovy" />
-        <option value="$PROJECT_DIR$/vars/Pipeline.groovy" />
         <option value="$PROJECT_DIR$/src/net/test/config/Languages.groovy" />
         <option value="$PROJECT_DIR$/src/net/test/config/PipelineVersion.groovy" />
         <option value="$PROJECT_DIR$/src/net/test/config/ParamStore.groovy" />
+        <option value="$PROJECT_DIR$/vars/Pipeline.groovy" />
       </list>
     </option>
   </component>
@@ -239,13 +239,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/test/config/PipelineVersion.groovy" />
-    <entry file="file://$PROJECT_DIR$/vars/Pipeline.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vars/paramInEnv.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -271,6 +264,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars/Pipeline.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
