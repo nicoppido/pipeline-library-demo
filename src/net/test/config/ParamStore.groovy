@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 package net.test.config;
 import net.test.config.Languages;
-import net.test.config.PipelineVersion;
 import net.test.error.RequiredKeysException;
 
 class ParamStore {
