@@ -7,11 +7,9 @@ import net.test.error.RequiredKeysException;
 class ParamStore {
 
 	private final String language = "java"; // Simulo la stringa letta da config.yaml
-	private final String pvString = "1.0";
 
 	private final def context;
 	private Languages l;
-	private PipelineVersion pv;
 
 	ParamStore(context) {
 		this.context = context;
@@ -26,12 +24,6 @@ class ParamStore {
 			throw new RequiredKeysException("programming_language", "${language}");
 		}
 
-		try {
-			this.pv = PipelineVersion.get(pvString);
-			this.context.echo "{$pv.name()}";
-			this.context.env.PIPELINE_VERSION = this.pv.getPipelineVersion();
-			this.context.echo "{$env.PIPELINE_VERSION()}";
-		}
 		catch (Exception e) {
 			throw new Exception();
 
@@ -54,3 +46,5 @@ class ParamStore {
         } 
 		this.context.env.LANGUAGE = this.l.getLanguage();
 		*/
+
+
