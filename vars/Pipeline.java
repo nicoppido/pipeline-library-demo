@@ -36,7 +36,7 @@ def call(String configYaml, String version){
                 stage('Build') { 
                     steps {
                     	echo "Build"
-                        'sh 'mvn -B -DskipTests clean package'
+                        //'sh 'mvn -B -DskipTests clean package'
                     }
                 }
                 stage('Test') {
