@@ -11,7 +11,9 @@ def call(String configYaml, String version){
             }
             stages {
                 stage('Welcome') {
-                    Welcome(this);
+                    steps{
+                        Welcome(this);
+                    }
                 }
             }
         }
