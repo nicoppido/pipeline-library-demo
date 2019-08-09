@@ -12,6 +12,11 @@ def call(){
                         Welcome(this);
                     }
                 }
+                stage('Build') {
+                    steps{
+                        Build(this);
+                    }
+                }
             }
         }
     }
