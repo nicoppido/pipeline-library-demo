@@ -6,9 +6,6 @@ def call(){
                     image 'maven:3-alpine'  
                 }
             }
-            tools{
-                jdk version
-            }
             stages {
                 stage('Welcome') {
                     steps{
