@@ -1,4 +1,4 @@
-def call(String configYaml, String version){
+def call(){
     try {
         pipeline {
             agent {
