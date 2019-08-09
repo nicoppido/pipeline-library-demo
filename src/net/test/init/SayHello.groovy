@@ -10,5 +10,6 @@ public class SayHello{
 
   public void hello(context){
     context.echo "Hello, ${name}.";
+    context.echo "Running ${context.env.BUILD_ID} on ${context.env.JENKINS_URL}";
   }
 }
