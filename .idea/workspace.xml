@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4cd8095-b77b-4f95-a323-831c8b089611" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/net/test/test/TestUtils.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vars/Test.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/Pipeline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/Pipeline.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/log.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/Test.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/Test.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,56 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vars/Pipeline.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vars/Build.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/test/build/BuildUtils.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/test/init/SayHello.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/test/test/TestUtils.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vars/Test.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -78,6 +29,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vars/Build.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -108,8 +68,8 @@
         <option value="$PROJECT_DIR$/vars/Build.groovy" />
         <option value="$PROJECT_DIR$/vars/Welcome.groovy" />
         <option value="$PROJECT_DIR$/src/net/test/test/TestUtils.groovy" />
-        <option value="$PROJECT_DIR$/vars/Test.groovy" />
         <option value="$PROJECT_DIR$/vars/Pipeline.groovy" />
+        <option value="$PROJECT_DIR$/vars/Test.groovy" />
       </list>
     </option>
   </component>
@@ -323,20 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars/Build.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vars/Welcome.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vars/log.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -351,17 +297,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars/Test.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/test/test/TestUtils.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars/Welcome.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars/Build.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars/Test.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
