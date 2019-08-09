@@ -17,6 +17,11 @@ def call(){
                         Build(this);
                     }
                 }
+                stage('Test') {
+                    steps{
+                        Test(this);
+                    }
+                }
             }
         }
     }
