@@ -11,6 +11,11 @@ public class BuildUtils{
 
     public void build(context){
         context.sh shContent;
+        def files = context.findFiles(glob: 'src/main/java/com/mycompany/app');
+        for(int i = 0; i<files.size(); i++){
+            context.echo i.toString();
+            context.echo """${files[i].name} ${files[i].path}""";
+        }
     }
 }
 
